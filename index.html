@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js" 
+    integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS -->
     <script defer src="mail-list.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="root">
+        <ul> 
+            <li v-for="mail in nameMail">{{mail}}</li>
+        </ul>
+    </div>
 </body>
 </html>
